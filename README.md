@@ -2,9 +2,12 @@
 
 ## Start session
 ```
-$ apt-get install tigervnc-standalone-server
+#apt-get install tigervnc-standalone-server
+sudo apt install tightvnc*
 
-$ cat<<EOF>>vnc.sh
+
+
+cat<<EOF>>vnc.sh
 #!/bin/bash
 
 vncserver -geometry 1900x1080 -depth 16 -localhost no &
